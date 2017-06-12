@@ -1,0 +1,130 @@
+
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./jwed_home.css">
+    <link rel="stylesheet" href="./jwed_home_font.css">
+    <script src="./lib/js/jquery-3.2.1.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="header-container">
+        <img class="logo-image" src="./images/logo.png"/>
+        <form class = "login-form" onSubmit="xajax_check_alert(xajax.getFormValues('loginForm')); return false;" method="post" id="loginForm" name="loginForm">
+            <small id="login-error-small"></small>
+            <input id="email-box" class="login-text-box" type="text" placeholder="Email" name="email" class="email" value=""/>
+            <input type="checkbox" name='email_cookie' class="login-checkbox" checked style="width: initial; float: left; margin-right: 5px;"/>
+            <div id="line_email" class="login-underline-div"></div>
+            <div id="line_pass" class="login-underline-div"></div>
+            <input id="pass-box" class="login-text-box" type="password" placeholder="Password" name="password"/>
+            <label id="remember-me" class="login-label">Remember Me</label>
+            <a href="/forgot.php" alt="forgot password"><label id="forgot-pass" class="login-label">I forgot my password<label></a>
+            <input class="btn login-submit-button" type="submit" value="Login"/>
+        </form>
+
+        <div class="container text-center">
+            <label class="find-chosen-span">FIND YOUR CHOSEN ONE</label>
+            <label class="exclusively-jewish">Exclusively <b>Jewish</b>. 2700 <b>Matched</b> & Counting...</label>
+            <form class="signup-form" method="get" onsubmit="return false;" style="margin-top:64px;">
+            <input id="newEmail" class="form-control input-ls email-input" autocomplete="off" placeholder="Enter your email register" type="text" onkeydown="enterSubmit()" required autofocus>
+            <button class="btn btn-getstart" type="button" id="registerBtn" onclick=""><span class="get-start-span" style="float: left;">Get Started</span> <img class="direction-img" src='./images/right-drection.png' width="30px"/></button>
+            </form><span class="jwed-for-jewish">JWed is for Jewish, marriage-minded singles only. &nbsp; <span>Full criteria</span></span> 
+            
+        </div>
+    </div>
+    <div class="container body-container-1">
+        <span class="jewish-meaningful">Jewish & Meaningful</span><br>
+        <span class="exclusively-jewish">Exclusively <b>Jewish.</b></span>
+        <span class="exclusively-marriage">Exclusively for <b>Marriage.</b></span>
+          <span class="our-top-priority-is">
+          Our top priority is providing you with a focused experience based on who you are and what you want so. 
+          you can focus only on the most suitable matches. We innovate tools which encourage meaningful
+          relationships, leading to better first dates and more marrages.</span>
+          <div class="jewish-meaningfull-div">
+              <img class="jweish-img" src="./images/Jewish only.png"/>
+              <img class="marriage-img" src="./images/Mariage minded.png"/>
+              <img class="jweis-profiles-img" src="./images/Screen profiles Copy.png"/>
+              <span id='jewish_1' class="jewish-only">Jewish only</span>
+              <span id='jewish_2' class="jewish-only">Marriage minded only</span>
+              <span id='jewish_3' class="jewish-only">We screen all profiles</span>
+          </div>
+          <button class="btn btn-signup"><span class="sign-up-now-span">Sign up now</span></button>
+    </div>
+    <div class="body-container-2">
+        <div class="avatar-img-div">
+            <img id="avatar-1" src="./images/avatars/1@3x.png" class="avatar-imm-row" alt="Image">
+            <img id="avatar-2" src="./images/avatars/2@3x.png" class="avatar-imm-row" alt="Image">
+            <img id="avatar-3" src="./images/avatars/3@3x.png" class="avatar-imm-row" alt="Image">
+        
+            <img id="avatar-4" src="./images/avatars/4@3x.png" class="avatar-imm-row" alt="Image">
+            <span class="matched-count-bold">2700</span>
+            <p class="matched-count">Matched & Counting</p>
+            <button class="btn btn-seestory">
+                <span class="small-btn-span">See stories</span>
+            </button>
+
+            <img id="avatar-5" src="./images/avatars/5@3x.png" class="avatar-imm-row" alt="Image">
+            <img id="avatar-6" src="./images/avatars/6@3x.png" class="avatar-imm-row" alt="Image">
+            <img id="avatar-7" src="./images/avatars/1@3x.png" class="avatar-imm-row" alt="Image">
+        </div>
+        <div class="group-img-div">
+            <span class="in-the-media">In the media</span>
+            <button class="btn btn-view-more">
+                <span class="small-btn-span">View more</span>
+            </button>
+            <img src="./images/groups/3@3x.png" class="group-img-1" alt="Image">
+            <img src="./images/groups/4@3x.png" class="group-img-2" alt="Image">
+            <img src="./images/groups/5@3x.png" class="group-img-3" alt="Image">
+        
+            <img src="./images/groups/7@3x.png" class="group-img-4" alt="Image">
+            <img src="./images/groups/8@3x.png" class="group-img-5" alt="Image">
+            <img src="./images/groups/9@3x.png" class="group-img-6" alt="Image">
+          
+            <img src="./images/groups/10@3x.png" class="group-img-7" alt="Image">
+            <img src="./images/groups/3@3x.png" class="group-img-8" alt="Image">
+            <img src="./images/groups/4@3x.png" class="group-img-9" alt="Image">
+        </div>
+    </div>
+    <div class="body-container-3">
+        <div class="paper-div">
+            <img class="paper-img" src='./images/paper sheet.png'/>
+        </div>
+        <div class = "success-story-div">
+            <span class="success-stories">Success Stories</span>
+            <br/>
+            <br/>
+            <span class="s-of-jewish-sin">
+                <span>1000's of Jewish singles met & married their soulmate through JWed since 2001. We've had this success because we have a singular mission of bringing Jewish singles together in marriage.</span>
+                <span style="margin-top:15px;">At JWed, we believe now is the time for you to meet your match, so we won't be satisfied until it's your turn to walk</span><br/>
+                <span>down the aisle.</span>
+            </span>
+            <button class="btn btn-signup"><span class="sign-up-now-span">Sign up now</span></button>
+        </div>
+    </div>
+    <footer class="footer-container">
+      <label class="ready-to-find-your-s">Ready to find your soulmate?</label>
+      <label class="exclusively-jewish">Exclusively <strong>Jewish.</strong> Exclusively for <strong>Matched.</label>
+      <label class="exclusively-jewish-m">Exclusively <strong>Jewish.</strong><br/>Exclusively for <strong>Matched.</strong></label>
+      <form class="signup-form" method="get" onsubmit="return false;">
+          <input id="newEmail" class="form-control input-ls email-input" autocomplete="off" placeholder="Enter your email register" type="text" onkeydown="enterSubmit()" required autofocus>
+          <button class="btn btn-getstart" type="button" id="registerBtn" onclick=""><span class="get-start-span" style="float: left;">Get Started</span> <img class="direction-img" src='./images/right-drection.png' width="30px"/></span></button>
+      </form>
+      <table class="footer-menu-table">
+        <tr>
+          <td ><a><span class="home-help-advert">Home</span></a></td>
+          <td ><a><span class="home-help-advert">Help</span></a></td>
+          <td ><a><span class="home-help-advert">Advertise</span></a></td>
+          <td ><a><span class="home-help-advert">Success</span></a></td>
+          <td ><a><span class="home-help-advert">Report</span></a></td>
+        </tr>
+      </table>
+      <div class="copyright-div">
+        <span class="copyright-2017-577">Copyright 2017/5773 Frumster, Inc. | WE DO NOT CONDUCT BACKGROUND CHECKS ON JWed MEMBERS - </span>
+        <a style="color:#FFF;font-family:'Proxima Nova Light';opacity: 0.8;font-size: 11px;	line-height: 13px;">Legal Stuff</a>
+      </div>
+    </footer>
+  </body>
+</html>
